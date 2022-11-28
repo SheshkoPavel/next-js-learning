@@ -4,14 +4,14 @@ import NavbarContainer from "../components/NavbarContainer";
 const Users = ({users}) => {
     const usersJSX = users.map(el =>
         <li key={el.id} >
-            <Link href={`/users/${el.id}`} legacyBehavior>
-            <a>{ el.name }</a>
+            <Link href={`/users/${el.id}`}>
+                { el.name }
             </Link>
         </li>
         )
 
     return (
-        <NavbarContainer keywords={"users page"} title={"users page"}>
+        <NavbarContainer>
             <h1>Users list</h1>
             <div>
                 { usersJSX }
