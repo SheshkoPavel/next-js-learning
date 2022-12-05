@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,5 +7,10 @@
 .navbar {
     background: lightblue;
     padding: 15px;
+}
 
+body {
+    max-width: 80%;
+    /* height: 100vh; */
+    border: dotted lightblue;
 }

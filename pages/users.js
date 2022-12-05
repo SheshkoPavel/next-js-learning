@@ -1,22 +1,23 @@
 import Link from "next/link";
-import NavbarContainer from "../components/NavbarContainer";
+import MainContainer from "../components/MainContainer";
+import styles from "../styles/users.module.css"
 
 const Users = ({users}) => {
     const usersJSX = users.map(el =>
-        <li key={el.id} >
-            <Link href={`/users/${el.id}`}>
+        <li className={styles.li} key={el.id} >
+            <Link className={styles.link} href={`/users/${el.id}`}>
                 { el.name }
             </Link>
         </li>
-        )
+        );
 
     return (
-        <NavbarContainer>
+        <MainContainer>
             <h1>Users list</h1>
             <div>
                 { usersJSX }
             </div>
-        </NavbarContainer>
+        </MainContainer>
     );
 };
 

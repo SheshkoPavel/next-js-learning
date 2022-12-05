@@ -1,11 +1,21 @@
 import Head from "next/head";
-import NavbarContainer from "../components/NavbarContainer";
+import Image from "next/image";
+import MainContainer from "../components/MainContainer";
 
 const Index = () => {
     return (
-    <NavbarContainer keywords={"Main page"}>
+    <MainContainer keywords={"Main page"}>
         <h1>Main page</h1>
-    </NavbarContainer>
+        <div style={{textAlign: "center", borderRadius: '30px'}}>
+            <Image style={{borderRadius: '30px'}}
+                src="/avat.jpg"
+                width={200}
+                height={200}
+            />
+        </div>
+
+    </MainContainer>
+
     );
 };
 

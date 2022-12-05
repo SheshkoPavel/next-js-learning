@@ -1,0 +1,18 @@
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    color: mediumslateblue;
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+    transition: 0.5s ease;
+}
+
+.link:hover {
+    color: rgb(248, 219, 52);
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+.li {
+    margin-left: 10px;
+}
