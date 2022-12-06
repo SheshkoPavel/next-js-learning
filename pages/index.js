@@ -11,14 +11,15 @@ const Index = () => {
                 width={200}
                 height={200}
             />
+            <br/>
             <Image
                 alt="Next.js logo"
                 src="https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js-bg.png"
-                width={1200}
+                width={720}
                 height={400}
                 style={{
-                maxWidth: '100%',
-                height: 'auto',
+                    maxWidth: '100%',
+                    height: 'auto',
                 }}
             />
         </div>
