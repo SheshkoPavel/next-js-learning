@@ -12,7 +12,7 @@ const Users = ({users}) => {
         );
 
     return (
-        <MainContainer>
+        <MainContainer keywords={"Users list"} title={"Список юзеров"}>
             <h1>Users list</h1>
             <div>
                 { usersJSX }

@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Navbar from "./Navbar";
 
-const MainContainer = ({ children, keywords }) => {
+const MainContainer = ({ children, keywords, title }) => {
     return (
         <>
+            <Head>
+                <meta keywords={keywords}></meta>
+                <title>{title}</title>
+            </Head>
             <Navbar />
             <div>
                 {children}

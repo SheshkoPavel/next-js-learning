@@ -10,7 +10,7 @@ export default function Post({ posts }) {
         </li>)
 
     return (
-        <MainContainer>
+        <MainContainer keywords={"Posts list"} title={"Список постов"}>
             <div>
                 <h1>Posts using getStaticPaths</h1>
             </div>

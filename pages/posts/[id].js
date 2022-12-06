@@ -5,7 +5,7 @@ export default function Post({ post }) {
     const { query } = useRouter();
 
     return (
-        <MainContainer >
+        <MainContainer keywords={`post with id=${query.id} is shown`} title={`Пост ${query.id}`}>
             <div>
                 <h1>Post with id: { query.id }</h1>
                 <h2>Title: { post.title }</h2>
